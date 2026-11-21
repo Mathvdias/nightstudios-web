@@ -1,14 +1,11 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/portfolio",
-      "destination": "https://matheusdiasportfolio.web.app/portfolio/"
-    },
+  "redirects": [
     {
       "source": "/portfolio/:path*",
-      "destination": "https://matheusdiasportfolio.web.app/portfolio/:path*"
+      "destination": "https://matheusdiasportfolio.web.app/",
+      "permanent": false
     }
   ]
 }
