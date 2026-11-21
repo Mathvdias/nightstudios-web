@@ -360,3 +360,65 @@ a.card:hover {
 .site-footer p {
   margin: 0.25rem 0;
 }
+
+/* Tester onboarding (tesouro/testar) */
+.big-steps {
+  list-style: none;
+  counter-reset: big;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.big-steps li {
+  counter-increment: big;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.25rem 1.25rem 4.25rem;
+  position: relative;
+}
+
+.big-steps li::before {
+  content: counter(big);
+  position: absolute;
+  left: 1.1rem;
+  top: 1.15rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: var(--mark-star);
+  color: #0b1020;
+  font-weight: 800;
+  font-size: 1.15rem;
+  display: grid;
+  place-items: center;
+}
+
+.big-steps h2 {
+  margin: 0.15rem 0 0.4rem;
+  font-size: 1.2rem;
+}
+
+.big-steps p {
+  margin: 0 0 0.9rem;
+}
+
+.cta {
+  display: block;
+  text-align: center;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border: 1px solid color-mix(in srgb, var(--accent-contrast) 18%, transparent);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.95rem 1rem;
+  border-radius: 999px;
+}
+
+.cta:hover,
+.cta:focus-visible {
+  filter: brightness(1.25);
+}
