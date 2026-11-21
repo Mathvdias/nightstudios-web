@@ -197,6 +197,25 @@ li + li {
   text-decoration: none;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.cards .card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards .card .more {
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 0.6rem;
+}
+
 a.card:hover {
   border-color: var(--link);
 }
