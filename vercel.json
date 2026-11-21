@@ -1,4 +1,14 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/portfolio",
+      "destination": "https://matheusdiasportfolio.web.app/portfolio/"
+    },
+    {
+      "source": "/portfolio/:path*",
+      "destination": "https://matheusdiasportfolio.web.app/portfolio/:path*"
+    }
+  ]
 }
